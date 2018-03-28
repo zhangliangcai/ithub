@@ -1,13 +1,6 @@
-const mysql = require('mysql')
+const connection = require('./db-helper.js')
 
 const moment = require('moment')
-
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '7758521',
-    database: 'ithubs'
-})
 
 exports.showSignin = (req, res) => {
     res.render('signin.html')
